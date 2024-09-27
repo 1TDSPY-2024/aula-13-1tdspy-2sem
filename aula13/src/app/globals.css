@@ -10,10 +10,10 @@ body{
     .menu{
         @apply m-10;
     }
-    .menu ul{
-        @apply list none;
-    }
     .menu a{
         @apply no-underline;
+        @media screen {
+            
+        }
     } 
 }

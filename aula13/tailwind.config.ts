@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
-import typography from "@tailwindcss/typography"
+import forms from "@tailwindcss/forms";
+import typography from "@tailwindcss/typography";
 
 //força configs de tipos para o tailwind
 //content possui um array c 3 itens, com extensoes de aqrq, podendo entrasr nas seguintes pastas para proc atributo class para ver se os componentes podem receber estilos do css
@@ -20,7 +21,8 @@ const config: Config = {
     },
   },
   plugins: [
-    typography
+    typography,
+    forms
   ],
 };
 export default config;
