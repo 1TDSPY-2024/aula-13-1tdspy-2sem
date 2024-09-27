@@ -1,7 +1,7 @@
 import Cabecalho from "@/components/Cabecalho/Cabecalho";
 import Rodape from "@/components/Rodape/Rodape";
 import type { Metadata } from "next";
-
+import "@/app/globals.css";
 
 export const metadata: Metadata = {
   title: "Exemplo de Boyler-Plate",
@@ -14,7 +14,7 @@ export const viewport = {
   colorScheme: "light"
 }
 
-export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
+export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
 
   // const rotas = useRouter();
 
@@ -27,9 +27,9 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
     <html lang="pt-br">
       <body>
         <Cabecalho />
-          {children}
+        {children}
         <Rodape />
-       </body>
+      </body>
     </html>
   );
 }
