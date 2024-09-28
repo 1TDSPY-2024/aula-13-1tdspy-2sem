@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .menu{
+        @apply m-10 no-underline;
+    }
+
+    .menu ul{
+        @apply list-none;
+    }
+
+    .menu a{
+        @apply no-underline;
+    }
+}

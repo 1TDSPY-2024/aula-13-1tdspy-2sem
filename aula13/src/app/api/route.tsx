@@ -6,3 +6,4 @@ export async function GET() {
     const dados = JSON.parse(file);
     return NextResponse.json(dados);
 }
+
