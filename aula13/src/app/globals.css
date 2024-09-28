@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{background-color: aqua;}
+
+@layer components {
+    .menu{
+        @apply mx-10 m-10 py-5;
+    }
+
+    .menu ul{
+        @apply list-none first-letter:rounded-e;
+    }
+
+    .menu a{
+        @apply no-underline first-letter:lowercase;
+        
+        @media screen {
+            quotes: none;
+        }
+    }
+
+}
